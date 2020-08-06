@@ -1,6 +1,9 @@
 {
   "name": "mywebsite",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.x"
+  },
   "private": true,
   "dependencies": {
     "babel-eslint": "10.1.0",
