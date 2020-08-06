@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Background from '../images/index_banner.png';
+import { Container } from 'reactstrap';
 
 export class Home extends Component {
   static displayName = Home.name;
@@ -6,7 +8,16 @@ export class Home extends Component {
   render () {
     return (
       <div>
-        <h1>Hello, world!</h1>
+        <div style={sectionStyle}>
+          <div style={bannerPadding}>
+            <h1 style={bannerText}>Hello! I'm Yoonkun</h1>
+            <div style={textMargin}>
+              <h3 style={bannerText}>WEB DEVELOPER</h3>
+              <h5 style={bannerText}>HTML CSS React C# MSSQL MySQL</h5>
+            </div>
+          </div>
+        </div>
+        
         <p>Welcome to your new single-page application, built with:</p>
         <ul>
           <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
@@ -23,4 +34,25 @@ export class Home extends Component {
       </div>
     );
   }
+}
+
+var sectionStyle = {
+  width: "100%",
+  height: "auto",
+  backgroundSize: 'cover',
+  backgroundImage: `url(${Background})`
+}
+
+var bannerPadding = {
+  paddingBottom: "150px",
+  paddingTop: "500px"  
+}
+var textMargin = {
+  marginTop : "40px",
+  marginBottom: "20px"
+}
+var bannerText = {
+  fontWeight: "bold",
+  fontFamily: "Verdana",
+  textAlign: "center"
 }
